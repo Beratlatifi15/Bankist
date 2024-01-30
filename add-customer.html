@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Customer</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+<body>
+  <header>
+    <h1>Banking App</h1>
+  </header>
+  <div class="container">
+    <h2>Add Customer</h2>
+    <form id="add-customer-form" class="form">
+      <label for="customer-name">Name:</label>
+      <input type="text" id="customer-name" required>
+      <label for="customer-age">Age:</label>
+      <input type="number" id="customer-age" required>
+      <label for="customer-email">Email:</label>
+      <input type="email" id="customer-email" required>
+      <label for="customer-balance">Balance:</label>
+      <input type="number" id="customer-balance" required>
+      <button type="submit" onclick="addCustomer(event)">Add Customer</button>
+      <button onclick="cancel()">Cancel</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!-- Module 2 exercise 2
+  
+  HTML Structure:
+
+Create an HTML document with the basic structure.
+Include the required meta tags for character encoding and viewport settings.
+Add a title for the page.
+Link an external stylesheet (style.css) to apply styles to the page.
+Include jQuery library (from a Content Delivery Network - CDN).
+Create a header section containing the title "Banking App."
+Create a container div to hold the form.
+Form for Adding Customers:
+
+Inside the container div, create an h2 element with the text "Add Customer."
+Create a form element with the id "add-customer-form" and a class "form."
+Inside the form, create four labeled input fields:
+a. Name: An input field of type "text" with the id "customer-name" and "required" attribute.
+b. Age: An input field of type "number" with the id "customer-age" and "required" attribute.
+c. Email: An input field of type "email" with the id "customer-email" and "required" attribute.
+d. Balance: An input field of type "number" with the id "customer-balance" and "required" attribute.
+Create two buttons inside the form:
+a. "Add Customer" button with a "submit" type and an "onclick" attribute set to "addCustomer(event)" (JavaScript function to be defined).
+b. "Cancel" button with an "onclick" attribute set to "cancel()" (JavaScript function to be defined).
+JavaScript (script.js):
+
+Create a JavaScript file named "script.js" and link it to the HTML file using a script tag at the bottom, before the closing </body> tag.
+Define the functions "addCustomer(event)" and "cancel()" in the script.js file.-->
